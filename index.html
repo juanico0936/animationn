@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+ body{
+	background-color: black;
+ }
+ p {
+  width: 100px;
+  margin: 0px auto;
+}
+
+ #cir1{ 
+	filter: blur(25px);
+    width: 90px;
+    height: 90px;
+    background: red;
+    position: relative;
+    border-radius: 50px;
+    -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+   
+	
+}
+ #cir2{ 
+	filter: blur(25px);
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    border-radius: 50px;
+    -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: mysecond 5s infinite;
+   
+	
+}
+#cir3{ 
+	filter: blur(25px);
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    border-radius: 50px;
+    -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: mythird 5s infinite;
+   
+	
+}
+#cir4{ 
+	filter: blur(25px);
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    border-radius: 50px;
+    -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfourth 5s infinite;
+   
+	
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 500px; top: 0px;}
+    25%  {background: yellow; left: 500px; top: 0px;}
+    50%  {background: skyblue; left: 600px; top: 0px;}
+    75%  {background: yellowgreen; left: 700px; top: 0px;}
+    100% {background: red; left: 800px; top: 0x;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 450px; top: 100px;}
+    25%  {background: yellow; left: 500px; top: 50px;}
+    50%  {background: skyblue; left: 600px; top: 150px;}
+    75%  {background: yellowgreen; left: 700px; top: 250px;}
+    100% {background: red; left: 800px; top: 300x;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mysecond {
+    0%   {background: green; right: -600px; top: 23x;}
+    25%  {background: white; right: -700px; top: 42px;}
+    50%  {background: pink; right: -400px; top: 104px;}
+    75%  {background: yellowgreen; right: -15px; top: 124px;}
+    100% {background: skyblue; right: -100px; top: 32px;}
+}
+
+@keyframes mysecond {
+    0%   {background: green; right: -950px; top: 122px;}
+    25%  {background: white; right: -700px; top: 50px;}
+    50%  {background: pink; right: -500px; top: 123px;}
+    75%  {background: cyan; right: -689px; top: 312px;}
+    100% {background: blue; right: -250px; top: 45px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mythird {
+    0%   {background: green; right: -700px; top: 200px;}
+    25%  {background: white; right: -300px; top: 300px;}
+    50%  {background: pink; right: -150px; top: 400px;}
+    75%  {background: yellowgreen; right: -15px; top: 500px;}
+    100% {background: skyblue; right: -350px; top: 0px;}
+}
+
+@keyframes mythird {
+    0%   {background: green; right: -500px; top: 0px;}
+    25%  {background: white; right: -400px; top: 0px;}
+    50%  {background: pink; right: -650px; top: 0px;}
+    75%  {background: cyan; right: -689px; top: 0px;}
+    100% {background: blue; right: -500px; top: 0px;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfourth {
+    0%   {background: red; left: 800px; top: 300px;}
+    25%  {background: yellow; left: 500px; top: 400x;}
+    50%  {background: skyblue; left: 650px; top: 500px;}
+    75%  {background: yellowgreen; left: 100px; top: 50px;}
+    100% {background: red; left: 150x; top: 0px;}
+}
+
+@keyframes myfourth {
+    0%   {background: red; left: 500px; top: 150px;}
+    25%  {background: yellow; left: 600px; top: 250px;}
+    50%  {background: skyblue; left: 450px; top: 350px;}
+    75%  {background: yellowgreen; left: 900px; top: 90px;}
+    100% {background: red; left: 100px; top:150px;}
+}
+
+
+</style>
+</head>
+<body>
+
+<p>Do the animation once, then do the animation backwards:</p>
+
+<div id="cir1"></div>
+<div id="cir2"></div>
+<div id="cir3"></div>
+<div id="cir4"></div>
+
+
+<p><strong>Note:</strong> The animation-direction property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
